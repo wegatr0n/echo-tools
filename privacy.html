@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Echo Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold"><a href="index.html">Echo Tools</a></h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="tools/image.html" class="hover:underline">Image Tools</a>
+        <a href="tools/pdf.html" class="hover:underline">PDF Tools</a>
+        <a href="trending.html" class="hover:underline">Trending</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="section max-w-4xl mx-auto py-12 px-4">
+    <h2 class="text-2xl font-bold mb-4">Privacy Policy</h2>
+    <p class="mb-4">We take your privacy seriously. This policy explains what data we collect and how we use it.</p>
+    <h3 class="text-xl font-semibold mt-6 mb-2">Client‑Side Processing</h3>
+    <p class="mb-4">All of our tools run entirely in your browser using WebAssembly and JavaScript. When you compress an image or merge PDFs, the files never leave your device. We do not upload your files to any server.</p>
+    <h3 class="text-xl font-semibold mt-6 mb-2">Analytics</h3>
+    <p class="mb-4">We use free analytics provided by Cloudflare to understand aggregated visitor trends. This data includes information such as page views, referrer URL and broad geographic region. We do not collect personally identifiable information.</p>
+    <h3 class="text-xl font-semibold mt-6 mb-2">Advertising</h3>
+    <p class="mb-4">To keep the service free, we display ads provided by Google AdSense. Google may use cookies to personalize ads. You can review Google’s <a href="https://policies.google.com/technologies/ads" target="_blank" class="text-blue-600 hover:underline">Advertising Policies and Terms</a> for more information. We also include affiliate links to third‑party products. Clicking on these links may result in our receiving a small commission at no additional cost to you.</p>
+    <h3 class="text-xl font-semibold mt-6 mb-2">Contact</h3>
+    <p>If you have questions about this policy, please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a>.</p>
+  </main>
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="mb-2">© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p class="text-sm">
+      <a href="privacy.html" class="text-blue-600 hover:underline font-semibold">Privacy Policy</a> |
+      <a href="about.html" class="text-blue-600 hover:underline">About</a> |
+      <a href="contact.html" class="text-blue-600 hover:underline">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
