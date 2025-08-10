@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Merge & Split – Echo Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Import pdf-lib library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold"><a href="../index.html">Echo Tools</a></h1>
+      <nav class="space-x-4">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <a href="image.html" class="hover:underline">Image Tools</a>
+        <a href="pdf.html" class="hover:underline font-semibold">PDF Tools</a>
+        <a href="../trending.html" class="hover:underline">Trending</a>
+        <a href="../about.html" class="hover:underline">About</a>
+        <a href="../contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="tool-container">
+    <h2 class="text-2xl font-bold mb-4">PDF Merge & Split</h2>
+    <p class="mb-6">Merge multiple PDFs into one file or split a PDF into several parts【605381397924899†L123-L129】. All processing happens locally in your browser.</p>
+    <!-- Merge section -->
+    <div id="merge-section" class="mb-8 p-4 border rounded bg-white shadow">
+      <h3 class="text-xl font-semibold mb-2">Merge PDFs</h3>
+      <input type="file" id="merge-files" accept="application/pdf" multiple>
+      <button id="merge-button" class="mt-2">Merge</button>
+      <div id="merge-result" class="mt-4"></div>
+    </div>
+    <!-- Split section -->
+    <div id="split-section" class="p-4 border rounded bg-white shadow">
+      <h3 class="text-xl font-semibold mb-2">Split a PDF</h3>
+      <input type="file" id="split-file" accept="application/pdf">
+      <label for="split-ranges">Page ranges (e.g., 1-3,5):</label>
+      <input type="text" id="split-ranges" placeholder="e.g., 1-3,5" class="mt-1">
+      <button id="split-button" class="mt-2">Split</button>
+      <div id="split-result" class="mt-4"></div>
+    </div>
+    <div class="ad-container mt-8">
+      <!-- AdSense placeholder for tool pages -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="mb-2">© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p class="text-sm">
+      <a href="../privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a> |
+      <a href="../about.html" class="text-blue-600 hover:underline">About</a> |
+      <a href="../contact.html" class="text-blue-600 hover:underline">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../assets/js/pdf-tool.js"></script>
+</body>
+</html>
