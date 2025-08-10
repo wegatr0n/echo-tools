@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Echo Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold"><a href="index.html">Echo Tools</a></h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="tools/image.html" class="hover:underline">Image Tools</a>
+        <a href="tools/pdf.html" class="hover:underline">PDF Tools</a>
+        <a href="trending.html" class="hover:underline">Trending</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="contact.html" class="hover:underline font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="section max-w-3xl mx-auto py-12 px-4">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-4">Have questions, suggestions or partnership inquiries? We’d love to hear from you.</p>
+    <h3 class="text-xl font-semibold mb-2">Email</h3>
+    <p class="mb-4">Send us an email at <a href="mailto:contact@echotools.example" class="text-blue-600 hover:underline">contact@echotools.example</a> and we’ll get back to you as soon as possible.</p>
+    <h3 class="text-xl font-semibold mb-2">Feedback Form</h3>
+    <p class="mb-2">Alternatively, you can fill out the quick form below (opens your default email client):</p>
+    <form action="mailto:contact@echotools.example" method="post" enctype="text/plain" class="space-y-4">
+      <label class="block">
+        Name
+        <input type="text" name="name" required class="mt-1 border rounded px-2 py-1 w-full">
+      </label>
+      <label class="block">
+        Email
+        <input type="email" name="email" required class="mt-1 border rounded px-2 py-1 w-full">
+      </label>
+      <label class="block">
+        Message
+        <textarea name="message" rows="4" required class="mt-1 border rounded px-2 py-1 w-full"></textarea>
+      </label>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Send Message</button>
+    </form>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="mb-2">© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p class="text-sm">
+      <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a> |
+      <a href="about.html" class="text-blue-600 hover:underline">About</a> |
+      <a href="contact.html" class="text-blue-600 hover:underline font-semibold">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
