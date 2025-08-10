@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip Creator – Echo Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- FFmpeg library for video processing -->
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.4/dist/ffmpeg.min.js"></script>
+</head>
+<body>
+  <!-- Header with unified navigation -->
+  <header>
+    <div class="nav">
+      <h1 class="text-xl font-bold"><a href="../index.html">Echo Tools</a></h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="logo-maker.html">Logo Maker</a>
+        <a href="clip.html">Clip Tools</a>
+        <a href="video.html">Video Tools</a>
+        <a href="caption.html">Caption AI</a>
+        <a href="image.html">Image Tools</a>
+        <a href="audio.html">Audio Tools</a>
+        <a href="pdf.html">PDF Tools</a>
+        <a href="ai.html">AI Assistant</a>
+        <a href="../trending.html">Trending</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="tool-container">
+    <h2>Clip Creator</h2>
+    <p>Create highlight clips for TikTok, Twitch or Reels. Upload a video, set start and end times in seconds, choose an orientation, and generate a ready-to-share clip entirely in your browser.</p>
+    <input type="file" id="clip-input" accept="video/*" />
+    <label for="clip-start">Start Time (s)</label>
+    <input type="number" id="clip-start" min="0" step="0.1" value="0" />
+    <label for="clip-end">End Time (s)</label>
+    <input type="number" id="clip-end" min="0" step="0.1" value="10" />
+    <label for="clip-orientation">Orientation</label>
+    <select id="clip-orientation">
+      <option value="original">Keep original</option>
+      <option value="vertical">Vertical 9:16 (TikTok/Reels)</option>
+      <option value="horizontal">Horizontal 16:9 (YouTube)</option>
+    </select>
+    <button id="clip-process-button">Create Clip</button>
+    <div id="clip-results" class="tool-result"></div>
+    <!-- Placeholder for ads -->
+    <div class="ad-container" style="margin-top:2rem;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p>
+      <a href="../privacy.html">Privacy Policy</a> |
+      <a href="../about.html">About</a> |
+      <a href="../contact.html">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../assets/js/clip-tool.js"></script>
+</body>
+</html>
