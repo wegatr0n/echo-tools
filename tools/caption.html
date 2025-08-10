@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caption Generator – Echo Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <h1 class="text-xl-bold"><a href="../index.html">Echo Tools</a></h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="logo-maker.html">Logo Maker</a>
+        <a href="clip.html">Clip Tools</a>
+        <a href="video.html">Video Tools</a>
+        <a href="caption.html">Caption AI</a>
+        <a href="image.html">Image Tools</a>
+        <a href="audio.html">Audio Tools</a>
+        <a href="pdf.html">PDF Tools</a>
+        <a href="ai.html">AI Assistant</a>
+        <a href="../trending.html">Trending</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="tool-container">
+    <h2 class="text-2xl font-bold mb-4">Caption Generator</h2>
+    <p class="mb-4">Generate catchy, AI‑powered captions for TikTok, Reels, YouTube Shorts and more. Provide a brief description of your clip, enter your OpenAI API key, and let our AI craft a memorable caption.</p>
+    <label for="caption-desc">Describe your video or idea</label>
+    <textarea id="caption-desc" rows="4" style="width:100%; resize:vertical; margin-bottom:1rem;"></textarea>
+    <label for="caption-key">OpenAI API Key (<em>sk-...</em>)</label>
+    <input type="password" id="caption-key" style="width:100%; margin-bottom:1rem;" />
+    <button id="caption-gen-button">Generate Caption</button>
+    <div id="caption-results" class="tool-result" style="margin-top:1rem;"></div>
+    <div class="ad-container mt-8">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p>
+      <a href="../privacy.html">Privacy Policy</a> |
+      <a href="../about.html">About</a> |
+      <a href="../contact.html">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../assets/js/caption-tool.js"></script>
+</body>
+</html>
