@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant – Echo Tools</title>
+  <!-- Tailwind for basic layout and spacing; custom CSS for branding -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold"><a href="../index.html">Echo Tools</a></h1>
+      <nav class="space-x-4 text-sm">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <a href="image.html" class="hover:underline">Image Tools</a>
+        <a href="pdf.html" class="hover:underline">PDF Tools</a>
+        <a href="video.html" class="hover:underline">Video Tools</a>
+        <a href="audio.html" class="hover:underline">Audio Tools</a>
+        <a href="ai.html" class="font-semibold">AI Assistant</a>
+        <a href="../trending.html" class="hover:underline">Trending</a>
+        <a href="../about.html" class="hover:underline">About</a>
+        <a href="../contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">AI Assistant</h2>
+    <p class="mb-4">Chat with an AI assistant to get help brainstorming ideas, planning projects, or answering questions. Enter your OpenAI API key below and start a conversation. Your key is stored only in your browser and sent directly to OpenAI.</p>
+    <label for="api-key" class="block mb-2 font-medium">OpenAI API Key</label>
+    <input id="api-key" type="password" placeholder="sk-..." class="w-full px-3 py-2 border rounded mb-4" />
+    <!-- Chat window -->
+    <div id="messages" class="border rounded p-4 h-64 overflow-y-auto bg-white mb-4"></div>
+    <form id="chat-form" class="flex space-x-2">
+      <input id="user-input" type="text" placeholder="Type your message..." class="flex-1 px-3 py-2 border rounded" />
+      <button type="submit" class="px-4 py-2 bg-purple-600 text-white rounded">Send</button>
+    </form>
+    <div class="ad-container mt-8">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="mb-2">© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p class="text-sm">
+      <a href="../privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a> |
+      <a href="../about.html" class="text-blue-600 hover:underline">About</a> |
+      <a href="../contact.html" class="text-blue-600 hover:underline">Contact</a>
+    </p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../assets/js/ai-tool.js"></script>
+</body>
+</html>
