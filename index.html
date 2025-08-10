@@ -4,84 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Echo Tools – Free Online Tools for Creators & Businesses</title>
-  <!-- Tailwind CSS via CDN for simple, responsive design -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Optional: Tailwind removed for offline compatibility -->
+  <!-- Google Font for a modern, luxurious look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Cloudflare Web Analytics (token placeholder – user must replace) -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_CLOUDFLARE_TOKEN"}'></script>
 </head>
-<body class="bg-gray-50">
+<body>
   <!-- Header with navigation -->
-  <header class="bg-gray-800 text-white">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+  <header>
+    <div class="nav">
       <h1 class="text-xl font-bold"><a href="index.html">Echo Tools</a></h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="tools/image.html" class="hover:underline">Image Tools</a>
-        <a href="tools/pdf.html" class="hover:underline">PDF Tools</a>
-        <a href="trending.html" class="hover:underline">Trending</a>
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tools/image.html">Image Tools</a>
+        <a href="tools/pdf.html">PDF Tools</a>
+        <a href="trending.html">Trending</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero section -->
-  <section class="hero text-center text-white relative">
-    <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
-    <div class="relative z-10 max-w-3xl mx-auto py-24 px-4">
-      <h2 class="text-4xl font-bold mb-4">Powerful Web‑Based Tools</h2>
-      <p class="text-lg mb-6">Compress images, merge PDFs, and more – all in your browser. No downloads, no watermarks, always free.</p>
-      <a href="tools/image.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded">Get Started</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Unlock Powerful Online Tools</h2>
+      <p>Streamline your workflow with our free, browser‑based utilities – no downloads, no watermarks.</p>
+      <a href="tools/image.html" class="btn">Get Started</a>
     </div>
   </section>
 
   <!-- Tools section -->
-  <section class="section max-w-7xl mx-auto py-12 px-4">
-    <h3 class="text-2xl font-bold mb-6 text-center">Our Free Tools</h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <section class="tools">
+    <h3>Our Tools</h3>
+    <div class="tool-grid">
       <!-- Image Tool card -->
-      <div class="card p-4 border rounded shadow bg-white">
-        <h4 class="text-xl font-semibold mb-2">Image Compressor & Resizer</h4>
-        <p class="mb-4">Reduce file sizes without losing quality and resize photos for Instagram, Facebook and more【999337575933244†L64-L66】【448009920059389†L110-L127】.</p>
-        <a href="tools/image.html" class="text-blue-600 hover:underline font-semibold">Open tool →</a>
+      <div class="tool-card">
+        <svg class="icon-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M3 7h4l2-2h6l2 2h4v12H3V7z"/>
+          <circle cx="12" cy="13" r="3"/>
+        </svg>
+        <h4>Image Compressor &amp; Resizer</h4>
+        <p>Reduce file sizes without losing quality and resize photos for social media and more.</p>
+        <a href="tools/image.html">Try it →</a>
       </div>
       <!-- PDF Tool card -->
-      <div class="card p-4 border rounded shadow bg-white">
-        <h4 class="text-xl font-semibold mb-2">PDF Merge & Split</h4>
-        <p class="mb-4">Combine multiple PDFs or split a PDF into parts in seconds【605381397924899†L123-L129】.</p>
-        <a href="tools/pdf.html" class="text-blue-600 hover:underline font-semibold">Open tool →</a>
+      <div class="tool-card">
+        <svg class="icon-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 21H5a2 2 0 01-2-2V7a2 2 0 012-2h4l2-2h6l2 2h4a2 2 0 012 2v12a2 2 0 01-2 2z"/>
+          <path d="M12 11v6m3-3H9"/>
+        </svg>
+        <h4>PDF Merge &amp; Split</h4>
+        <p>Combine multiple PDFs or split a PDF into parts in seconds.</p>
+        <a href="tools/pdf.html">Try it →</a>
       </div>
       <!-- More tools placeholder -->
-      <div class="card p-4 border rounded shadow bg-white">
-        <h4 class="text-xl font-semibold mb-2">More Tools Coming Soon</h4>
-        <p class="mb-4">Stay tuned as we roll out video converters, file format changers and more based on trending demand【238795967686957†L158-L179】.</p>
+      <div class="tool-card">
+        <svg class="icon-purple" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M12 4v16m8-8H4"/>
+        </svg>
+        <h4>More Tools Coming Soon</h4>
+        <p>Stay tuned as we roll out video converters, file format changers and more based on trending demand.</p>
       </div>
     </div>
   </section>
 
   <!-- Trending topics section -->
-  <section class="section bg-white py-12">
-    <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-4">Trending Topics</h3>
-      <p class="mb-4">We monitor global search trends to identify new opportunities. Here are some topics gaining momentum【238795967686957†L158-L179】:</p>
-      <ul id="trending-list" class="list-disc pl-6 space-y-1"></ul>
-    </div>
+  <section class="trending">
+    <h3>Trending Topics</h3>
+    <p>We monitor global search trends to identify new opportunities. Here are some topics gaining momentum:</p>
+    <ul id="trending-list"></ul>
   </section>
 
   <!-- Advertisement & Affiliate offers section -->
-  <section class="section max-w-7xl mx-auto py-12 px-4">
-    <h3 class="text-2xl font-bold mb-4">Support Our Work</h3>
-    <p class="mb-4">Ads and affiliate links keep these tools free. If you find value in our service, consider checking out these recommended products.</p>
+  <section class="support">
+    <h3>Support Our Work</h3>
+    <p>Ads and affiliate links keep these tools free. If you find value in our service, consider checking out these recommended products.</p>
     <!-- Google AdSense placeholder: Replace data-ad-client and data-ad-slot with your own details -->
     <div class="ad-container">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
     </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- Affiliate offer example -->
-    <div class="mt-6">
-      <a href="https://www.amazon.com/s?k=ring+light+with+phone+holder" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Shop creator gear on Amazon</a>
+    <div class="mt-8">
+      <a href="https://www.amazon.com/s?k=ring+light+with+phone+holder" target="_blank" rel="noopener noreferrer" class="btn">Shop creator gear on Amazon</a>
     </div>
   </section>
 
