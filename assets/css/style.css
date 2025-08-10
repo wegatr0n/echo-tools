@@ -222,6 +222,20 @@ header {
 .support .btn {
   background: linear-gradient(to right, #10b981, #14b8a6);
 }
+/* Improve support section contrast */
+.support h3 {
+  color: #0f172a;
+  opacity: 1;
+}
+
+.support {
+  color: #374151;
+}
+
+.support p {
+  color: #374151;
+}
+
 
 /* Footer */
 footer {
