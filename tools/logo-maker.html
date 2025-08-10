@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Logo Maker – Echo Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <h1 class="text-xl font-bold"><a href="../index.html">Echo Tools</a></h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="logo-maker.html">Logo Maker</a>
+        <a href="clip.html">Clip Tools</a>
+        <a href="video.html">Video Tools</a>
+        <a href="caption.html">Caption AI</a>
+        <a href="image.html">Image Tools</a>
+        <a href="audio.html">Audio Tools</a>
+        <a href="pdf.html">PDF Tools</a>
+        <a href="ai.html">AI Assistant</a>
+        <a href="../trending.html">Trending</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="tool-container">
+    <h2>AI Logo Maker</h2>
+    <p>Create clean, futuristic logos in seconds. All generation happens locally in your browser. Export as SVG or PNG.</p>
+    <div class="controls" style="display:flex;flex-wrap:wrap;gap:12px;">
+      <label style="flex:1 1 200px;">
+        Brand name
+        <input id="brand" placeholder="Echo Tools" value="Echo Tools">
+      </label>
+      <label style="flex:1 1 200px;">
+        Tagline (optional)
+        <input id="tagline" placeholder="Create • Convert • Clip">
+      </label>
+      <label style="flex:1 1 150px;">
+        Style
+        <select id="style">
+          <option value="minimal" selected>Minimal</option>
+          <option value="futuristic">Futuristic</option>
+          <option value="lux">Lux</option>
+        </select>
+      </label>
+      <label style="flex:1 1 150px;">
+        Icon
+        <select id="icon">
+          <option value="spark">Spark</option>
+          <option value="wave">Wave</option>
+          <option value="hex">Hex</option>
+          <option value="bolt">Bolt</option>
+          <option value="circle">Circle</option>
+          <option value="chip">Chip</option>
+        </select>
+      </label>
+      <label style="flex:1 1 150px;">
+        Layout
+        <select id="layout">
+          <option value="icon-left" selected>Icon Left</option>
+          <option value="icon-top">Icon Top</option>
+          <option value="badge">Badge</option>
+        </select>
+      </label>
+      <label style="flex:1 1 150px;">
+        Variations
+        <select id="count">
+          <option>6</option>
+          <option selected>12</option>
+          <option>18</option>
+        </select>
+      </label>
+      <button class="btn" id="generate" style="margin-top:10px;">Generate Logos</button>
+      <button class="btn-secondary" id="randomize" style="margin-top:10px;">Randomize Colors</button>
+    </div>
+    <div id="variants" style="margin-top:20px;"></div>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Echo Tools. All rights reserved.</p>
+    <p><a href="../privacy.html">Privacy Policy</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a></p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../assets/js/logo-maker.js"></script>
+</body>
+</html>
